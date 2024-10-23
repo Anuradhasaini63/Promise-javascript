@@ -1,0 +1,44 @@
+
+Promise:
+Prmosie is the solution of the callback hell
+Promise is a "promise of code excution
+The code either excutes or fails, in both cases the subscriber will be notified
+e.g- If we order food on zamato, then zamoto will notify us either order will be success or not
+syntax:
+    let promise = new promise(function(resolve, reject){
+        //excute
+    })
+    A promise can be in one of three states:
+
+Pending: The initial state, neither fulfilled nor rejected.
+Fulfilled: The operation completed successfully, and the promise has a resulting value.
+Rejected: The operation failed, and the promise has a reason for the failure.
+
+Promises are commonly used when dealing with asynchronous operations like API calls
+
+promise works parallelly means multiple promise can work at the same time and gives the output after completion 
+
+Promise excute in background and when it is done you be notify with the help of .then() and .catch()
+
+then() is used to handle the resolved value of the promise.
+catch() is used to handle any errors or rejections.
+
+
+Promise chaining in JavaScript is a technique where multiple asynchronous operations are handled in sequence, by chaining multiple .then() methods together.
+ Each .then() receives the result of the previous promise and returns a new promise (or value)
+
+
+
+
+multiple handlers refer to the ability to attach multiple .then(), .catch(), or .finally()
+methods to a single promise. Each of these handlers will be executed independently once the promise settles (i.e., resolves or rejects).
+
+When a promise is resolved or rejected, all attached handlers are executed
+
+Methods of promises:
+    1. Promise.all : Accepts an array of promises and returns a single promise that resolves when all of the promises resolve.
+    2. Promise.allSettled: Returns a promise that resolves after all promises have settled (either resolved or rejected).
+    3. Promise.race: Returns a promise that settles (resolves or rejects) first
+    4. Promise.any: Returns a promise that resolves as soon as any of the promises resolves.
+    5. Promise.resolve: Creates a promise that is already resolved with the given value.
+    6. Promise.reject: Creates a promise that is already rejected with the given reason
